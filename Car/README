@@ -1,0 +1,45 @@
+
+ios软件设计规范：         --李坤锭
+
+为了以后代码方便管理、便于阅读和扩展，现在对代码进行以下规范，
+
+以前遗留问题，后续慢慢改，新加的功能和类请按照规范执行！
+
+
+
+1.新建文件夹头字母大写，按照 MVC模式放置
+   
+   文件夹说明
+    a.所以类都放在Classes中，Classes分为Categories（放置类别）、External（引用的第三方库）、Model（数据操作）、ViewController（显示和控制器）
+    b.Supporting Files 下面Resources 放置Images和Audios文件夹。
+    c.config.h为项目配置（主要宏定义等）----开发前先阅读
+
+2.自定义新建的类使用QS开头；第三方类或者工具类不以QS开头
+
+3.变量等命名规则按照通用规则
+
+4.如果文件不是本人建立的，修改代码请增加注释 
+     注释格式：//modify(add\delete) by name time
+     例如：//modify by Quentin 2014.10.31
+
+5.注意多线程一定要加同步锁      ------非常重要
+
+6.代码中所有字符串全部使用Localizable，除了注释，代码中不能出现中文；（为了方便调试debug输出可以是中文）
+
+7.所以资源例如图片，全部按照统一格式，模块加名字例如：chat_sendMessage.png,不严格要求，但是绝对不能出现中文名；文件夹也不能出现中文。
+
+
+
+
+
+对于系统的常用类作实例变量声明时加入后缀：
+
+　 UIViewController:VC
+   UIImage:Img　　UIImageView:ImgView　　UIView:View　　UILabel:Lbl
+   UIButton:Btn　　UINavigationBar:NBar　　 UIToolBar:TBar　　UISearchBar:SBar
+   UITextField:TextField　　UITextView:TextView
+   UICollectionView:ColView
+   NSArray:Array　　     NSMutableArray:MArray
+   NSDictionary:Dict　　NSMutableDictionary:MDict
+　 NSString:Str　　       NSMutableString:MStr
+   NSSet:Set　　　　　  NSMutableSet:MSet

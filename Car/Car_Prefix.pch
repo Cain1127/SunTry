@@ -1,0 +1,23 @@
+//
+//  CarPrefix.pch
+//  Car
+//
+//  Created by System Administrator on 9/22/14.
+//  Copyright (c) 2014 Quentin. All rights reserved.
+//
+
+#ifndef Car_CarPrefix_pch
+#define Car_CarPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <UIKit/UIView.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "QSUIHelper.h"
+#import "Car_Config.h"
+
+#endif

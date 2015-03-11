@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+pod 'AFNetworking', '~> 2.4.1'
+pod 'MBProgressHUD', '~> 0.8'
+pod 'libqrencode', '~> 3.4.2'
+pod 'IQKeyboardManager', '~> 3.2.0.1'

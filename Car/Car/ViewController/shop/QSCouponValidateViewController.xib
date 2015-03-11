@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6246" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QSCouponValidateViewController">
+            <connections>
+                <outlet property="couponTextField" destination="ibR-xv-xIX" id="gVa-IX-DGG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ggf-M8-VSt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入使用的优惠编码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibR-xv-xIX">
+                    <rect key="frame" x="8" y="30" width="284" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aME-u9-y4Z">
+                    <rect key="frame" x="94" y="68" width="111" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="111" id="HOH-4E-usl"/>
+                    </constraints>
+                    <state key="normal" title="使用优惠">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="OkBtn:" destination="-1" eventType="touchUpInside" id="jgp-wU-4d8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="aME-u9-y4Z" secondAttribute="centerX" id="1ha-48-c1s"/>
+                <constraint firstItem="aME-u9-y4Z" firstAttribute="top" secondItem="ibR-xv-xIX" secondAttribute="bottom" constant="8" id="26U-xL-qJT"/>
+                <constraint firstAttribute="centerX" secondItem="ibR-xv-xIX" secondAttribute="centerX" id="2Ba-a7-GwW"/>
+                <constraint firstItem="ibR-xv-xIX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="vkI-cW-KuX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140" y="114"/>
+        </view>
+    </objects>
+</document>
